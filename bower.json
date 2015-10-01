@@ -1,0 +1,22 @@
+{
+  "name": "cli-remote",
+  "description": "A responsive AngularJS app for controlling remote machines via SSH",
+  "version": "0.1.0",
+  "homepage": "https://github.com/stphivos/cli-remote",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.5",
+    "angular-route": "~1.4.5",
+    "angular-loader": "~1.4.0",
+    "angular-mocks": "~1.4.0",
+    "html5-boilerplate": "~5.2.0",
+    "angular-ui-router": "~0.2.15",
+    "angular-cookies": "~1.4.5",
+    "angular-resource": "~1.4.5",
+    "angular-animate": "~1.4.5",
+    "angular-bootstrap": "~0.13.0",
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "autosize": "~3.0.13"
+  }
+}

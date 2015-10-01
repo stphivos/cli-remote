@@ -1,0 +1,8 @@
+tmp
+.idea
+.DS_Store
+!.gitkeep
+logs/*
+node_modules/
+app/bower_components
+app/index-async.html

@@ -1,0 +1,55 @@
+<div id="command" class="panel panel-default">
+    <div class="panel-body well">
+        <form ng-submit="runCommand()" ui-keypress="{13:'runCommand($event)'}">
+            <h4 class="ver fst">tools</h4>
+
+            <div class="form-inline">
+                <div class="form-group">
+                    <label class="col-md-3 col-xs-3 btn btn-info" ng-model="sudo" btn-checkbox>sudo</label>
+
+                    <div class="col-md-9 col-xs-9">
+                        <input type="text" class="form-control" id="username" placeholder="username...">
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="ver prv">
+                    <label ng-repeat="x in tools" class="btn btn-primary hor ver nxt" ng-click="selectTool($index)"
+                           ng-model="tool" btn-radio="x.name" uncheckable>{{ x.name }}</label>
+                </div>
+            </div>
+
+            <div class="form-horizontal" ng-show="selectedTool && selectedTool.options.length">
+                <hr>
+                <h4>usage</h4>
+
+                <div ng-repeat="x in selectedTool.options" class="form-group">
+                    <label class="col-md-2 col-xs-2 control-label">{{ x.short }} {{ x.long }}</label>
+
+                    <div class="col-md-10 col-xs-10">
+                        <input type="text" class="form-control" ng-model="x.value">
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <h4>console</h4>
+
+            <div class="console-host ver nxt">
+                <div class="console">
+                    <div class="out">
+                        <textarea class="form-control input-sm autosize" name="log" ng-model="response" readonly
+                                  show-tail></textarea>
+                    </div>
+                    <div class="input-group input-group-sm in">
+                        <span class="input-group-addon">$</span>
+                        <input class="form-control" type="text" name="command" ng-model="command"/>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-warning btn-lg btn-block">run</button>
+        </form>
+    </div>
+</div>
