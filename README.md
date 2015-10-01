@@ -12,5 +12,5 @@ Users will be presented with standard administrative tools and usage options, an
 ### Visualization and GUI
 <img src="app/screenshots/remote.png" alt="tcpdump screenshot" width="450" />
 
-### Challenge
-Finding the right js library for communicating **directly with acceptable securely** with a target SSH server.
+### Current challenge
+Finding the right js library for communicating **directly with acceptable security** with a target SSH server.
