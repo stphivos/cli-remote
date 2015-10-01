@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/stphivos/cli-remote.svg)](https://travis-ci.org/stphivos/cli-remote)
+
 # cli-remote
 A responsive mobile gui/cli for interacting with machines via SSH
 
